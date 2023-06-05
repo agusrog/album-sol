@@ -15,7 +15,7 @@ contract AnimAlbum is ERC1155, Ownable {
     mapping(address => uint256) lastUpdated;
 
 
-    constructor() ERC1155("https://ipfs.io/ipfs/agus/") {
+    constructor() ERC1155("https://ipfs.io/ipfs/agus/{id}.json") {
         _mint(owner(), YAGUARETE, 10**DECIMAL, "");
         _mint(owner(), PINGUINO, 10**DECIMAL, "");
         _mint(owner(), PUMA, 10**DECIMAL, "");
